@@ -23,12 +23,12 @@
   },
   "homepage": "https://github.com/pownjs/pown-shell#readme",
   "devDependencies": {
-    "@pown/dist": "^2.2.0"
+    "@pown/dist": "^2.3.1"
   },
   "dependencies": {
-    "@pown/cli": "^2.7.0",
-    "@pown/modules": "^2.2.0",
-    "@pown/script": "^2.0.1"
+    "@pown/cli": "^2.8.0",
+    "@pown/modules": "^2.2.1",
+    "@pown/script": "^2.1.0"
   },
   "pown": {
     "commands": [
