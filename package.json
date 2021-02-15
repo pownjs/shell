@@ -35,7 +35,7 @@
   },
   "pown": {
     "commands": [
-      "lib/commands/shell/index.js"
+      "commands/shell"
     ]
   }
 }

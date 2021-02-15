@@ -1,6 +1,6 @@
 exports.yargs = {
     command: 'shell [options]',
-    describe: 'Simple shell',
+    describe: 'Simple shell for executing pown commands',
 
     handler: async(argv) => {
         const { execute } = require('@pown/cli')
@@ -8,7 +8,7 @@ exports.yargs = {
 
         const { loadableModules, loadableCommands } = await extract()
 
-        const { subcommands } = require('@pown/script/lib/commands/subcommands')
+        const { subcommands } = require('@pown/script/commands/script/subcommands')
 
         const executeOptions = {
             loadableModules: loadableModules,
@@ -42,7 +42,7 @@ exports.yargs = {
 
         process.exit = function(...args) {}
 
-        const exit = (code) => {
+        const processExit = (code) => {
             process.exit = originalExit
 
             process.exit(code)
@@ -66,7 +66,7 @@ exports.yargs = {
                 if (e.exitCode) {
                     console.warn(e.message)
 
-                    return exit(e.exitCode)
+                    return processExit(e.exitCode)
                 }
                 else {
                     console.error(e)
@@ -76,6 +76,6 @@ exports.yargs = {
             prompt: rl.prompt()
         }
 
-        return exit(0)
+        return processExit(0)
     }
 }
