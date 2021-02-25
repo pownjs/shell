@@ -26,7 +26,7 @@
     "@pown/dist": "^2.4.0"
   },
   "dependencies": {
-    "@pown/cli": "^2.27.0",
+    "@pown/cli": "^2.27.1",
     "@pown/modules": "^2.2.1",
     "@pown/script": "^2.14.0"
   },
