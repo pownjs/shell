@@ -26,9 +26,9 @@
     "@pown/dist": "^2.4.0"
   },
   "dependencies": {
-    "@pown/cli": "^2.27.1",
-    "@pown/modules": "^2.2.1",
-    "@pown/script": "^2.14.0"
+    "@pown/cli": "^2.29.0",
+    "@pown/modules": "^2.8.0",
+    "@pown/script": "^2.15.0"
   },
   "engines": {
     "node": ">=0.11"
