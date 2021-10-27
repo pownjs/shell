@@ -8,7 +8,7 @@ exports.yargs = {
 
         const { loadableModules, loadableCommands } = await extract()
 
-        const { subcommands } = require('@pown/script/commands/script/subcommands')
+        const { subcommands } = require('@pown/script/commands/script/sub')
 
         const executeOptions = {
             loadableModules: loadableModules,
